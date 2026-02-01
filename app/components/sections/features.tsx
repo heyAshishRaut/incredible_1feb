@@ -164,28 +164,15 @@ const Features = () => {
                                         <div className={`laptop:w-[85%] w-full max-w-[450px] tablet:max-w-[554px] text-[#666] font-grotesk text-[14px] tablet:text-[16px] leading-[150%] tracking-[-2%]`}>Converting raw data into actionable insights and clean, usable formats</div>
                                     </div>
 
-                                    <div
-                                        className="
-    relative w-full
-    aspect-[16/9]
-    tablet:aspect-[4/3]
-    laptop:aspect-[16/9]
-  "
-                                    >
+                                    <div className="relative w-full h-[373px]">
                                         <Image
                                             src={feature2}
                                             alt=""
                                             fill
-                                            className="object-cover object-center"
-                                            sizes="
-      (max-width: 50.625rem) 100vw,
-      (max-width: 75rem) 90vw,
-      800px
-    "
+                                            className="object-cover"
                                             priority
                                         />
                                     </div>
-
                                 </div>
                             </div>
 
