@@ -19,7 +19,7 @@
 
 @layer components {
     .hero-bg {
-        background-image: url('/heroSection.png');
+        background-image: url('/heroSection.webp');
         background-repeat: no-repeat;
         background-position: center bottom;
         background-size: cover;
@@ -34,7 +34,6 @@
         }
     }
 }
-
 
 .marquee-right {
     width: 100%;

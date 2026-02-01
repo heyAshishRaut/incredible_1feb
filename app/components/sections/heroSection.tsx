@@ -57,7 +57,10 @@ const HeroSection = () => {
                                 border border-[#57565F]
                                 bg-[linear-gradient(90deg,#1F1F21_0%,#3E3D4C_34%,#1F1F21_51%,#3E3D4C_72%,#1F1F21_100%)]
                                 shadow-[0_25px_45px_rgba(0,0,0,0.25)]
-                                overflow-visible">
+                                overflow-visible
+                                hover:bg-[radial-gradient(585.23%_146.32%_at_50%_-450%,rgba(237,239,255,0.71)_0%,rgba(237,239,255,0)_100%),linear-gradient(104deg,#1F1F21_0%,#3E3D4C_34%,#1F1F21_51%,#3E3D4C_72%,#1F1F21_100%)]
+                                hover:shadow-[5px_5px_16px_rgba(30,34,41,0.29),21px_20px_29px_rgba(30,34,41,0.26),46px_45px_39px_rgba(30,34,41,0.15),82px_81px_46px_rgba(30,34,41,0.04),128px_126px_50px_rgba(30,34,41,0.01)]
+                                ">
                                 <div
                                     className="
                                     pointer-events-none absolute inset-[-28px] rounded-full bg-white/8 blur-[40px] opacity-0 transition-opacity duration-300 group-hover:opacity-100"/>
@@ -73,15 +76,19 @@ const HeroSection = () => {
 
                 {/* Content */}
                 <div className={`relative top-[110px] tablet:top-[144px] px-5 tablet:px-10 laptop:px-25 desktop:px-[120px]`}>
-                    <div className={`w-full max-w-[450px] tablet:max-w-[550px] laptop:max-w-[690px] desktop:max-w-[730px] flex flex-col items-center gap-y-[40px] laptop:gap-y-[70px] mx-auto`}>
+                    <div className={`w-[90%] max-w-[450px] tablet:max-w-[550px] laptop:max-w-[690px] desktop:max-w-[730px] flex flex-col items-center gap-y-[40px] laptop:gap-y-[70px] mx-auto`}>
                         <div className={`flex flex-col items-center gap-y-[34px] desktop:gap-y-[40px]`}>
                             <div className={`w-full flex flex-col items-center gap-y-[14px] desktop:gapy-y-[17px]`}>
                                 <div className={`font-grotesk font-medium text-[28px] tablet:text-[46px] laptop:text-[56px] desktop:text-[66px] leading-[110%] tracking-[-2%] text-center`}>Agentic AI models <br/> purpose built for work.</div>
                                 <div className={`w-full tablet:w-[506px] font-grotesk font-medium text-[14px] tablet:text-[17px] desktop:text-[21px] text-center text-[#464646]/86 leading-[150%] tracking-[-2%]`}>We optimize for the single statistic that matters: Amount of real-world tasks a model can solve</div>
                             </div>
 
-                            <div className={`w-full flex flex-col tablet:flex-row gap-y-3 items-center justify-center gap-x-[12px]`}>
-                                <div className=" relative group cursor-pointer flex items-center justify-center h-[44px] desktop:h-[53px] w-[170px] tablet:w-[164px] font-sans font-medium text-[12px] tablet:text-[15px] laptop:text-[17px] leading-[19.6%] rounded-full text-white border border-[#57565F] bg-[linear-gradient(90deg,#1F1F21_0%,#3E3D4C_34%,#1F1F21_51%,#3E3D4C_72%,#1F1F21_100%)] shadow-[0_25px_45px_rgba(0,0,0,0.25)] overflow-visible">
+                            <div className={`w-full flex flex-row flex-wrap gap-3 items-center justify-center`}>
+                                <div className=" relative group cursor-pointer flex items-center justify-center h-[44px] desktop:h-[53px] w-[170px] tablet:w-[164px] font-sans font-medium text-[12px] tablet:text-[15px] laptop:text-[17px] leading-[19.6%] rounded-full text-white border border-[#57565F] bg-[linear-gradient(90deg,#1F1F21_0%,#3E3D4C_34%,#1F1F21_51%,#3E3D4C_72%,#1F1F21_100%)] shadow-[0_25px_45px_rgba(0,0,0,0.25)] overflow-visible
+                                transition-all ease-in duration-75 hover:bg-[radial-gradient(585.23%_146.32%_at_50%_-450%,rgba(237,239,255,0.71)_0%,rgba(237,239,255,0)_100%),linear-gradient(104deg,#1F1F21_0%,#3E3D4C_34%,#1F1F21_51%,#3E3D4C_72%,#1F1F21_100%)]
+
+    hover:shadow-[5px_5px_16px_rgba(30,34,41,0.29),21px_20px_29px_rgba(30,34,41,0.26),46px_45px_39px_rgba(30,34,41,0.15),82px_81px_46px_rgba(30,34,41,0.04),128px_126px_50px_rgba(30,34,41,0.01)]
+                                ">
                                     <div className="pointer-events-none absolute inset-[-28px] rounded-full bg-white/8 blur-[40px] opacity-0 transition-opacity duration-300 group-hover:opacity-100"/>
 
                                     <div className="relative z-10">
