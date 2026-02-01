@@ -1,26 +1,119 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@layer utilities {
+    .font-grotesk {
+        font-family: var(--font-bdo-grotesk), system-ui, sans-serif;
+    }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@theme {
+    --breakpoint-tablet: 50.625rem;
+    --breakpoint-laptop: 75rem;
+    --breakpoint-desktop: 90rem;
+}
+
+@layer components {
+    .hero-bg {
+        background-image: url('/heroSection.png');
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: cover;
+        transform: scale(1);
+    }
+
+    @media (max-width: 640px) {
+        .hero-bg {
+            background-position: center center;
+            transform: scale(1.2);
+            opacity: 0.85;
+        }
+    }
+}
+
+
+.marquee-right {
+    width: 100%;
+    overflow: hidden;
+}
+
+.marquee-right__inner {
+    display: flex;
+    gap: 2rem;
+    width: max-content;
+    animation: marquee-right 15s linear infinite;
+}
+
+@media (min-width: 1300px) {
+    .marquee-right__inner {
+        animation: none;
+        transform: translateX(0);
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+/*.marquee-right__inner span {*/
+/*    white-space: nowrap;*/
+/*}*/
+
+@keyframes marquee-right {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@layer components {
+    .use-case-bg {
+        background-image: url('/useCases.png');
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: cover;
+        transform: scale(1);
+    }
+
+    @media (max-width: 640px) {
+        .use-case-bg {
+            background-position: center center;
+            transform: scale(1.2);
+            opacity: 0.85;
+        }
+    }
+}
+
+@layer components {
+    .glass-border {
+        background: rgba(255, 255, 255, 0.06);
+        backdrop-filter: blur(14px);
+    }
+
+    .glass-border::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        padding: 0.5px;
+
+        background: linear-gradient(
+                135deg,
+                rgba(255,255,255,0.7),
+                rgba(255,255,255,0.15),
+                rgba(0,0,0,0.35)
+        );
+
+        -webkit-mask:
+                linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+
+        pointer-events: none;
+    }
 }
