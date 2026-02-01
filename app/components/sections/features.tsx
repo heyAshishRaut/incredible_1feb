@@ -141,7 +141,7 @@ const Features = () => {
                                 <div className={` w-full max-w-[450px] tablet:max-w-1/2 flex flex-col bg-[#FBFAF9] `}>
                                     <div className={`tablet:h-[150px] p-4 w-full flex flex-col justify-start gap-y-2 tablet:gap-y-[14px] px-[15px] tablet:px-[22px] laptop:px-[33px]`}>
                                         <div className={`font-grotesk text-[15px] tablet:text-[18px] laptop:text-[20px] font-medium leading-[100%] tracking-[-1%]`}>Unmatched function calling accuracy</div>
-                                        <div className={`w-full max-w-[450px] tablet:max-w-[554px] text-[#666] font-grotesk text-[14px] tablet:text-[16px] leading-[150%] tracking-[-2%]`}>Models that think before they act. Sophisticated problem-solving and logical decision-making for complex challenges</div>
+                                        <div className={`w-full laptop:w-[85%] max-w-[450px] tablet:max-w-[554px] text-[#666] font-grotesk text-[14px] tablet:text-[16px] leading-[150%] tracking-[-2%]`}>Models that think before they act. Sophisticated problem-solving and logical decision-making for complex challenges</div>
                                     </div>
 
                                     <div className="relative w-full h-[373px]">
@@ -161,18 +161,31 @@ const Features = () => {
                                 <div className={`h-full w-full max-w-[450px] tablet:max-w-1/2 flex flex-col bg-[#FBFAF9] `}>
                                     <div className={`tablet:h-[150px] p-4 w-full flex flex-col justify-start gap-y-2 tablet:gap-y-[14px] px-[15px] tablet:px-[22px] laptop:px-[33px]`}>
                                         <div className={`font-grotesk text-[15px] tablet:text-[18px] laptop:text-[20px] font-medium leading-[100%] tracking-[-1%]`}>SDKs for every stack</div>
-                                        <div className={`w-full max-w-[450px] tablet:max-w-[554px] text-[#666] font-grotesk text-[14px] tablet:text-[16px] leading-[150%] tracking-[-2%]`}>Converting raw data into actionable insights and clean, usable formats</div>
+                                        <div className={`laptop:w-[85%] w-full max-w-[450px] tablet:max-w-[554px] text-[#666] font-grotesk text-[14px] tablet:text-[16px] leading-[150%] tracking-[-2%]`}>Converting raw data into actionable insights and clean, usable formats</div>
                                     </div>
 
-                                    <div className="relative w-full h-[373px]">
+                                    <div
+                                        className="
+    relative w-full
+    aspect-[16/9]
+    tablet:aspect-[4/3]
+    laptop:aspect-[16/9]
+  "
+                                    >
                                         <Image
                                             src={feature2}
                                             alt=""
                                             fill
-                                            className="bg-cover tablet:bg-cover"
+                                            className="object-cover object-center"
+                                            sizes="
+      (max-width: 50.625rem) 100vw,
+      (max-width: 75rem) 90vw,
+      800px
+    "
                                             priority
                                         />
                                     </div>
+
                                 </div>
                             </div>
 
