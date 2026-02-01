@@ -11,7 +11,7 @@ const Features = () => {
     return (
         <div className={`w-full flex flex-col`}>
             <div className={`w-full h-[20px] tablet:h-[40px] laptop:h-[100px] desktop:h-[120px] bg-white`}></div>
-            <div className={`w-full bg-[#F5F5F5] border border-[#F0F0F0] flex flex-col items-center mx-auto px-[40px] laptop:px-[100px] desktop:px-[120px]`}>
+            <div className={`w-full bg-[#F5F5F5] border border-[#F0F0F0] flex flex-col items-center mx-auto px-[30px] tablet:px-[40px] laptop:px-[100px] desktop:px-[120px]`}>
                 <div className={`pt-10 w-full tablet:max-w-[900px] laptop:max-w-[1240px] bg-white`}>
                     <div className={`w-full flex flex-col items-center gap-y-[50px]`}>
                         <div className={`w-full p-2.5 tablet:p-0 max-w-[400px] tablet:max-w-[560px] flex flex-col items-center gap-y-[24px]`}>
