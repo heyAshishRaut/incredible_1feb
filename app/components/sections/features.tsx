@@ -136,7 +136,7 @@ const Features = () => {
                             </div>
                         </div>
 
-                        <div className={`w-full flex flex-col items-center bg-[#F5F5F5]`}>
+                        <div className={`h-full w-full flex flex-col items-center bg-[#F5F5F5]`}>
                             <div className={`w-full flex flex-col items-center justify-center tablet:flex-row  tablet:border border-[#F0F0F0]`}>
                                 <div className="w-full max-w-[450px] tablet:max-w-1/2 flex flex-col bg-[#FBFAF9] border tablet:border-r border-[#F0F0F0]">
                                     <div className="tablet:h-[150px] p-4 w-full flex flex-col justify-start gap-y-2 tablet:gap-y-[14px] px-[15px] tablet:px-[22px] laptop:px-[33px]">
@@ -191,9 +191,9 @@ const Features = () => {
                                 <Testimonial/>
                             </div>
 
-                            <div className="bg-[#fcfaf7] border border-[#F0F0F0] w-full flex flex-col items-center tablet:items-start  justify-center tablet:flex-row laptop:flex-nowrap">
+                            <div className="min-h-full bg-[#fcfaf7] border border-[#F0F0F0] w-full flex flex-col items-center tablet:items-stretch  justify-center tablet:flex-row laptop:flex-nowrap">
 
-                                <div className="w-full max-w-[450px] tablet:w-1/2 laptop:w-1/3 flex flex-col">
+                                <div className="border-b tablet:border-b-0 tablet:border-r border-[#F0F0F0] w-full max-w-[450px] tablet:w-1/2 laptop:w-1/3 flex flex-col">
                                     {/* TEXT */}
                                     <div className="w-full px-[28px] py-[28px] flex flex-col gap-y-[14px]">
                                         <div className="font-grotesk text-[15px] tablet:text-[17px] laptop:text-[20px] font-medium leading-[100%] tracking-[-1%]">
@@ -206,7 +206,7 @@ const Features = () => {
 
                                     {/* IMAGE */}
                                     <div
-                                        className=" relative w-full aspect-[4/3] tablet:aspect-[5/4] laptop:aspect-[6/5] ">
+                                        className="relative w-full aspect-[4/3] tablet:aspect-[5/4] laptop:aspect-[6/5] ">
                                         <Image
                                             src={feature4}
                                             alt=""
@@ -215,11 +215,9 @@ const Features = () => {
                                             sizes="(max-width: 50.625rem) 100vw, (max-width: 75rem) 50vw, 33vw "/>
                                     </div>
                                 </div>
-                                <div className={` w-full h-[1px] tablet:h-full tablet:w-[1px] bg-[#F0F0F0]`}>
 
-                                </div>
-                                <div className="w-full max-w-[450px] tablet:w-1/2 laptop:w-1/3 flex flex-col bg-[#FCFAF8]">
-                                    {/* TEXT */}
+
+                                <div className="border-b tablet:border-b-0 tablet:border-r border-[#F0F0F0]  w-full max-w-[450px] tablet:w-1/2 laptop:w-1/3 flex flex-col bg-[#FCFAF8]">
                                     <div className="w-full px-[28px] py-[28px] flex flex-col gap-y-[14px]">
                                         <div className="font-grotesk text-[15px] tablet:text-[17px] laptop:text-[20px] font-medium leading-[100%] tracking-[-1%]">
                                             SDKs for every stack
@@ -229,9 +227,8 @@ const Features = () => {
                                         </div>
                                     </div>
 
-                                    {/* IMAGE */}
                                     <div
-                                        className="bg-[#fcfaf8] relative w-full aspect-[4/3] tablet:aspect-[5/4] laptop:aspect-[6/5] ">
+                                        className="relative w-full aspect-[4/3] tablet:aspect-[5/4] laptop:aspect-[6/5] ">
                                         <Image
                                             src={feature5}
                                             alt=""
@@ -240,11 +237,8 @@ const Features = () => {
                                             sizes="(max-width: 50.625rem) 100vw, (max-width: 75rem) 50vw, 33vw "/>
                                     </div>
                                 </div>
-                                <div className={` w-full h-[1px] tablet:h-full tablet:w-[1px] bg-[#F0F0F0]`}>
 
-                                </div>
                                 <div className="w-full max-w-[450px] tablet:w-1/2 laptop:w-1/3 flex flex-col bg-[#FCFAF8]">
-                                    {/* TEXT */}
                                     <div className="w-full px-[28px] py-[28px] flex flex-col gap-y-[14px]">
                                         <div className="font-grotesk text-[15px] tablet:text-[17px] laptop:text-[20px] font-medium leading-[100%] tracking-[-1%]">
                                             Enterprise-grade reliability
@@ -254,7 +248,6 @@ const Features = () => {
                                         </div>
                                     </div>
 
-                                    {/* IMAGE */}
                                     <div
                                         className=" relative w-full aspect-[4/3] tablet:aspect-[5/4] laptop:aspect-[6/5] ">
                                         <Image
