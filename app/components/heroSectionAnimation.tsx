@@ -1,16 +1,21 @@
-"use client"
+"use client";
 
-import { useRive } from "@rive-app/react-canvas"
+import {
+    useRive,
+    Layout,
+    Fit,
+    Alignment
+} from "@rive-app/react-canvas";
 
 export default function HeroSectionAnimation() {
     const { RiveComponent } = useRive({
         src: "/rive/IncredibleHero.riv",
         autoplay: true,
-    })
+        layout: new Layout({
+            fit: Fit.Contain,        // 🔑 MOST IMPORTANT
+            alignment: Alignment.Center,
+        }),
+    });
 
-    return (
-        <div className="w-full h-full">
-            <RiveComponent />
-        </div>
-    )
+    return <RiveComponent className="w-full h-full" />;
 }
