@@ -2,7 +2,7 @@ import Image from "next/image"
 import integration1 from "@/public/integration1.webp"
 import integration2 from "@/public/integration2.webp"
 import integrationSVG from "@/public/sectionIcons/integrationsSVG.webp"
-import TryAIAssistantButton from "@/app/components/tryAIAssistantBtn";
+import TryAIAssistantButton from "@/app/components/tryAIAssistantBtn"
 
 const Integrations = () => {
     return (
