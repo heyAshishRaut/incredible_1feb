@@ -61,7 +61,7 @@ const Security = () => {
                     />
 
                     <div className={`flex flex-col items-center gap-y-[14px]`}>
-                        <div className={`font-grotesk font-medium text-[22px] tablet:text-[26px] laptop:text-[36px] leading-[128%] tracking-[-2%] desktop-[43px]`}>Security. Reliable. Trusted</div>
+                        <div className={`font-grotesk font-medium text-[22px] tablet:text-[26px] laptop:text-[36px] leading-[128%] tracking-[-2%] desktop-[43px] text-center`}>Security. Reliable. Trusted</div>
 
                         <div className={`font-grotesk text-[#666666] text-center text-[14px] tablet:text-[16px] desktop:text-[19px] leading-[150%] tracking-[-2%]`}>
                             Enforcement of security procedures cross organization High-availability architecture + live status monitoring No-train by default with regional data options (EU / US) Optional DPA and custom tenant deployments on request
@@ -80,7 +80,7 @@ const Security = () => {
                     }
                 </div>
 
-                <div className={`text-[#666] w-full max-w-[400px] tablet:max-w-[480px] flex flex-col items-center gap-y-3 font-grotesk text-[14px] tablet:text-[16px] desktop:text-[17px] leading-[150%] tracking-[-2%]`}>
+                <div className={`text-[#666] text-center w-full max-w-[400px] tablet:max-w-[480px] flex flex-col items-center gap-y-3 font-grotesk text-[14px] tablet:text-[16px] desktop:text-[17px] leading-[150%] tracking-[-2%]`}>
                     <div className={`text-center`}>We do not train our models on customer data and we use isolated processing environments.</div>
                     <div>Visit <span className={`text-black`}>trust.incredible.one</span> for additional info</div>
                 </div>
