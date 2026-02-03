@@ -51,7 +51,8 @@ const Footer1 = () => {
             {/* Background */}
             <div className="footer-bg absolute inset-0 pointer-events-none" />
 
-            {/*/!* Mask *!/*/}
+            {/* Mask */}
+
             <div
                 className="
                 absolute inset-0 pointer-events-none

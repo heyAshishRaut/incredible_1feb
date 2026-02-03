@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@rive-app/react-canvas": "^4.26.2",
     "framer-motion": "^12.29.2",
     "next": "16.1.6",
     "react": "19.2.3",

@@ -3,6 +3,7 @@ import Navbar from "@/app/components/navbar"
 import Hamburger from "@/app/components/hamburger"
 import heroInput from "@/public/heroInput.webp"
 import TryAIAssistantButton from "@/app/components/tryAIAssistantBtn";
+import HeroSectionAnimation from "@/app/components/heroSectionAnimation";
 
 const HeroSection = () => {
     return (
@@ -19,7 +20,7 @@ const HeroSection = () => {
 
                 {/* Navbar */}
                 <div className={`relative top-[32px] w-full min-h-11 px-[20px] tablet:px-[30px]`}>
-                    <div className={`h-full w-full max-w-[450px] tablet:max-w-[900px] laptop:max-w-[1240px] mx-auto`}>
+                    <div className={`h-full w-full max-w-[450px] tablet:max-w-[900px] laptop:max-w-[1240px] bg-red-500 desktop:max-w-[1472px] mx-auto`}>
                         <div className={`w-full h-full flex items-center justify-between`}>
                             <div className={`relative w-[133px] h-[29px] desktop:h-[34px] desktop:w-[158px]`}>
                                 <Image
@@ -52,14 +53,15 @@ const HeroSection = () => {
                         </div>
 
                         <div className="relative w-full desktop:max-w-[667px] laptop:max-w-[562px] aspect-[562/148]">
-                            <Image
-                                src={heroInput}
-                                alt="Hero input"
-                                fill
-                                className="object-contain"
-                                sizes="(max-width: 50.625rem) 100vw, (max-width: 75rem) 80vw, 562px"
-                                priority
-                            />
+                            {/*<Image*/}
+                            {/*    src={heroInput}*/}
+                            {/*    alt="Hero input"*/}
+                            {/*    fill*/}
+                            {/*    className="object-contain"*/}
+                            {/*    sizes="(max-width: 50.625rem) 100vw, (max-width: 75rem) 80vw, 562px"*/}
+                            {/*    priority*/}
+                            {/*/>*/}
+                            <HeroSectionAnimation/>
                         </div>
                     </div>
                 </div>
