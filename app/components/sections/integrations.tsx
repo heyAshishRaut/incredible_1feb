@@ -6,8 +6,8 @@ import TryAIAssistantButton from "@/app/components/tryAIAssistantBtn";
 
 const Integrations = () => {
     return (
-        <div className={`w-full flex flex-col gap-y-20 p-5 tablet:pt-10 laptop:pt-25 desktop:pt-[120px] tablet:px-[30px] laptop:px-[50px] desktop:px-[70px]`}>
-            <div className={`w-full h-full flex flex-col items-center gap-y-20 desktop:gap-y-[95px]`}>
+        <div className={`w-full flex flex-col gap-y-20 py-[40px] tablet:py-20 laptop:py-25 desktop:py-[120px] px-[20px] tablet:px-[30px] laptop:px-[50px] desktop:px-[70px]`}>
+            <div className={`w-full h-full flex flex-col items-center gap-y-14 tablet:gap-y-20 desktop:gap-y-[95px]`}>
 
                 <div className={`w-full flex flex-col items-center gap-y-[24px] desktop:gap-y-[28px] max-w-[350px] tablet:max-w-[480px] laptop:max-w-[600px]`}>
                     <Image
@@ -29,7 +29,7 @@ const Integrations = () => {
                     </div>
                 </div>
 
-                <div className={`w-full flex flex-col items-center gap-y-[40px] laptop:gap-y-[60px] desktop:gap-y-[70px]`}>
+                <div className={`w-full flex flex-col items-center gap-y-[20px] tablet:gap-y-10 laptop:gap-y-[60px] desktop:gap-y-[70px]`}>
                     <div className={`w-full flex flex-col gap-y-[20px] items-center overflow-hidden`}>
                         <div
                             className="

@@ -121,8 +121,8 @@ const contents = [
 
 const Build = () => {
     return (
-        <div className={`w-full flex flex-col items-center gap-y-20 p-5 tablet:pt-10 laptop:pt-25 desktop:pt-[120px] tablet:px-[30px] laptop:px-[50px] desktop:px-[70px]`}>
-            <div className={`w-full h-full flex flex-col items-center gap-y-20`}>
+        <div className={`w-full flex flex-col items-center gap-y-20 py-[40px] tablet:py-20 laptop:py-25 desktop:py-[120px] px-[20px] tablet:px-[30px] laptop:px-[50px] desktop:px-[70px]`}>
+            <div className={`w-full h-full flex flex-col items-center gap-y-14 tablet:gap-y-20 desktop:gap-y-[95px]`}>
                 <div className={`w-full h-[210px] flex flex-col items-center gap-y-6`}>
                     <Image
                         src={buildSVG}

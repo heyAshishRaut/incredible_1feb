@@ -55,9 +55,9 @@ const Faq = () => {
     }
 
     return (
-        <div className={`w-full p-[20px] tablet:p-[40px] laptop:p-[100px] desktop:p-[120px]`}>
+        <div className={`w-full py-[40px] tablet:py-20 laptop:py-25 desktop:py-[120px] px-[20px] tablet:px-[30px] laptop:px-[50px] desktop:px-[70px]`}>
             <div
-                className={`w-full flex flex-col gap-y-[20px] items-center tablet:gap-y-[40px] laptop:gap-y-[60px] desktop:gap-y-[70px]`}>
+                className={`w-full flex flex-col items-center gap-y-14 tablet:gap-y-20 desktop:gap-y-[95px]`}>
                 <div className={`w-full tablet:max-w-[550px] flex flex-col gap-y-[16px] items-center p-[10px]`}>
                     <Image
                         src={faqSVG}

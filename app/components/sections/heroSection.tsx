@@ -18,7 +18,7 @@ const HeroSection = () => {
                 </div>
 
                 {/* Navbar */}
-                <div className={`relative top-[32px] w-full min-h-11 px-5 tablet:px-10 laptop:px-[50px] desktop:px-[70px]`}>
+                <div className={`relative top-[32px] w-full min-h-11 px-[20px] tablet:px-[30px]`}>
                     <div className={`h-full w-full max-w-[450px] tablet:max-w-[900px] laptop:max-w-[1240px] mx-auto`}>
                         <div className={`w-full h-full flex items-center justify-between`}>
                             <div className={`relative w-[133px] h-[29px] desktop:h-[34px] desktop:w-[158px]`}>

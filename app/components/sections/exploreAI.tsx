@@ -2,7 +2,7 @@ import exploreAI from "@/public/exploreAI.webp"
 
 const ExploreAI = () => {
     return (
-        <div className={`p-[20px] tablet:p-[40px] laptop:p-[100px] desktop:p-[120px] flex items-center`}>
+        <div className={`py-[40px] tablet:py-10 laptop:py-25 desktop:py-[120px] px-[20px] tablet:px-[30px] laptop:px-[50px] desktop:px-[70px] flex items-center`}>
             <div
                 style={{ backgroundImage: `url(${exploreAI.src})` }}
                 className="
