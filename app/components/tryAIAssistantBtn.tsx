@@ -57,7 +57,7 @@ export default function TryAIAssistantButton() {
     "
             />
 
-            <span className="relative z-10 hidden tablet:block">
+            <span className="relative z-10 block">
         Try AI Assistant
     </span>
         </motion.div>

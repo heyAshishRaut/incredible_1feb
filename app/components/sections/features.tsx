@@ -12,7 +12,7 @@ const Features = () => {
         <div className={`w-full flex flex-col`}>
             <div className={`w-full h-[20px] tablet:h-[40px] laptop:h-[100px] desktop:h-[120px] bg-white`}></div>
             <div className={`w-full bg-[#F5F5F5] border border-[#F0F0F0] flex flex-col items-center mx-auto px-[30px] tablet:px-[40px] laptop:px-[100px] desktop:px-[120px]`}>
-                <div className={`pt-10 w-full tablet:max-w-[900px] laptop:max-w-[1240px] desktop:max-w-[1472px] bg-white`}>
+                <div className={`pt-10 w-full max-w-[450px] tablet:max-w-[900px] laptop:max-w-[1240px] desktop:max-w-[1472px] bg-white`}>
                     <div className={`w-full flex flex-col items-center gap-y-[50px]`}>
                         <div className={`w-full p-2.5 tablet:p-0 max-w-[400px] tablet:max-w-[560px] flex flex-col items-center gap-y-[24px]`}>
                             <svg width="111" height="38" viewBox="0 0 111 38" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -136,9 +136,9 @@ const Features = () => {
                             </div>
                         </div>
 
-                        <div className={`w-full flex flex-col items-center`}>
-                            <div className={`w-full flex flex-col items-center justify-center gap-y-[1px] tablet:flex-row border border-[#F0F0F0]`}>
-                                <div className="w-full max-w-[450px] tablet:max-w-1/2 flex flex-col bg-[#FBFAF9]">
+                        <div className={`w-full flex flex-col items-center bg-[#F5F5F5]`}>
+                            <div className={`w-full flex flex-col items-center justify-center tablet:flex-row  tablet:border border-[#F0F0F0]`}>
+                                <div className="w-full max-w-[450px] tablet:max-w-1/2 flex flex-col bg-[#FBFAF9] border tablet:border-r border-[#F0F0F0]">
                                     <div className="tablet:h-[150px] p-4 w-full flex flex-col justify-start gap-y-2 tablet:gap-y-[14px] px-[15px] tablet:px-[22px] laptop:px-[33px]">
                                         <div className="font-grotesk text-[15px] tablet:text-[17px] laptop:text-[20px] font-medium leading-[100%] tracking-[-1%]">
                                             Unmatched function calling accuracy
@@ -160,9 +160,7 @@ const Features = () => {
                                     </div>
                                 </div>
 
-                                <div className="hidden tablet:block w-[1px] bg-[#F0F0F0]" />
-
-                                <div className="h-full w-full max-w-[450px] tablet:max-w-1/2 flex flex-col bg-[#FBFAF9]">
+                                <div className="border border-[#F0F0F0] h-full w-full max-w-[450px] tablet:max-w-1/2 flex flex-col bg-[#FBFAF9]">
                                     <div className="tablet:h-[150px] p-4 w-full flex flex-col justify-start gap-y-2 tablet:gap-y-[14px] px-[15px] tablet:px-[22px] laptop:px-[33px]">
                                         <div className="font-grotesk text-[15px] tablet:text-[17px] laptop:text-[20px] font-medium leading-[100%] tracking-[-1%]">
                                             SDKs for every stack
@@ -194,8 +192,8 @@ const Features = () => {
                             </div>
 
                             <div
-                                className=" w-full flex flex-col items-center tablet:items-start  justify-center tablet:flex-row laptop:flex-nowrap gap-y-[1px] bg-[#FCFAF8]">
-                                <div className="w-full max-w-[450px] tablet:w-1/2 laptop:w-1/3 flex flex-col bg-[#FCFAF8]">
+                                className=" w-full flex flex-col items-center tablet:items-start  justify-center tablet:flex-row laptop:flex-nowrap">
+                                <div className="border border-[#F0F0F0] w-full max-w-[450px] tablet:w-1/2 laptop:w-1/3 flex flex-col bg-[#FCFAF8]">
                                     {/* TEXT */}
                                     <div className="w-full px-[28px] py-[28px] flex flex-col gap-y-[14px]">
                                         <div className="font-grotesk text-[15px] tablet:text-[17px] laptop:text-[20px] font-medium leading-[100%] tracking-[-1%]">
@@ -218,7 +216,7 @@ const Features = () => {
                                     </div>
                                 </div>
 
-                                <div className="w-full max-w-[450px] tablet:w-1/2 laptop:w-1/3 flex flex-col bg-[#FCFAF8]">
+                                <div className="border border-[#F0F0F0] w-full max-w-[450px] tablet:w-1/2 laptop:w-1/3 flex flex-col bg-[#FCFAF8]">
                                     {/* TEXT */}
                                     <div className="w-full px-[28px] py-[28px] flex flex-col gap-y-[14px]">
                                         <div className="font-grotesk text-[15px] tablet:text-[17px] laptop:text-[20px] font-medium leading-[100%] tracking-[-1%]">
@@ -241,7 +239,7 @@ const Features = () => {
                                     </div>
                                 </div>
 
-                                <div className="w-full max-w-[450px] tablet:w-1/2 laptop:w-1/3 flex flex-col bg-[#FCFAF8]">
+                                <div className="border border-[#F0F0F0] w-full max-w-[450px] tablet:w-1/2 laptop:w-1/3 flex flex-col bg-[#FCFAF8]">
                                     {/* TEXT */}
                                     <div className="w-full px-[28px] py-[28px] flex flex-col gap-y-[14px]">
                                         <div className="font-grotesk text-[15px] tablet:text-[17px] laptop:text-[20px] font-medium leading-[100%] tracking-[-1%]">
@@ -264,7 +262,6 @@ const Features = () => {
                                     </div>
                                 </div>
                             </div>
-
                         </div>
 
                     </div>
