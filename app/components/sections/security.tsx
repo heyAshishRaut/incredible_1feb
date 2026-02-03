@@ -46,8 +46,8 @@ const items = [
 
 const Security = () => {
     return (
-        <div className={`w-full py-[40px] tablet:py-20 laptop:py-25 desktop:py-[120px] px-[20px] tablet:px-[30px] laptop:px-[50px] desktop:px-[70px]`}>
-            <div className={`w-full h-full flex flex-col items-center gap-y-14 tablet:gap-y-20 desktop:gap-y-[95px]`}>
+        <div className={`w-full py-[60px] tablet:py-20 laptop:py-25 desktop:py-[120px] px-[20px] tablet:px-[30px] laptop:px-[50px] desktop:px-[70px]`}>
+            <div className={`w-full h-full flex flex-col items-center gap-y-10 tablet:gap-y-20 desktop:gap-y-[95px]`}>
                 <div className={`w-[90%] max-w-[400px] flex flex-col items-center gap-y-[24px] desktop:gap-y-[28px] tablet:max-w-[550px] laptop:max-w-[672px] desktop:max-w-[720px]`}>
 
                     <Image

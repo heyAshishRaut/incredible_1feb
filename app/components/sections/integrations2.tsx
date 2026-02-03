@@ -180,11 +180,10 @@ const Integrations2 = () => {
     const [activeIndex, setActiveIndex] = useState<number | null>(0)
 
     return (
-        <div className={`w-full flex flex-col gap-y-20 py-[40px] tablet:py-20 laptop:py-25 desktop:py-[120px] px-[20px] tablet:px-[30px] laptop:px-[50px] desktop:px-[70px]`}>
-            <div className={`w-full h-full flex flex-col items-center gap-y-14 tablet:gap-y-20 desktop:gap-y-[95px]`}>
+        <div className={`w-full flex flex-col py-[60px] tablet:py-20 laptop:py-25 desktop:py-[120px] px-[20px] tablet:px-[30px] laptop:px-[50px] desktop:px-[70px]`}>
+            <div className={`w-full h-full flex flex-col items-center gap-y-10 tablet:gap-y-20 desktop:gap-y-[95px]`}>
 
-                <div
-                    className={`w-full flex flex-col items-center gap-y-[24px] desktop:gap-y-[28px] max-w-[330px] tablet:max-w-[430px] laptop:max-w-[525px] desktop:max-w-[650px]`}>
+                <div className={`w-full flex flex-col items-center gap-y-[24px] desktop:gap-y-[28px] max-w-[330px] tablet:max-w-[430px] laptop:max-w-[525px] desktop:max-w-[650px]`}>
                     <Image
                         src={integrationSVG}
                         alt="Small UI image"

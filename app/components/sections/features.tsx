@@ -10,7 +10,7 @@ import Testimonial from "@/app/components/testimonials"
 const Features = () => {
     return (
         <div className={`w-full flex flex-col`}>
-            <div className={`w-full h-[20px] tablet:h-[40px] laptop:h-[100px] desktop:h-[120px] bg-white`}></div>
+            <div className={`w-full h-[60px] tablet:h-[80px] laptop:h-[100px] desktop:h-[120px] bg-white`}></div>
             <div className={`w-full bg-[#F5F5F5] border border-[#F0F0F0] flex flex-col items-center mx-auto px-[30px] tablet:px-[40px] laptop:px-[100px] desktop:px-[120px]`}>
                 <div className={`pt-10 w-full max-w-[450px] tablet:max-w-[900px] laptop:max-w-[1240px] desktop:max-w-[1472px] bg-white`}>
                     <div className={`w-full flex flex-col items-center gap-y-[50px]`}>
@@ -183,7 +183,7 @@ const Features = () => {
                                 </div>
                             </div>
 
-                            <div style={{ backgroundImage: `url(${feature3.src})` }} className={`bg-cover bg-center w-full max-w-[450px] tablet:max-w-full h-[495px] p-4 tablet:p-[32px] flex flex-col justify-start gap-y-10 tablet:gap-y-0 tablet:justify-between items-start`}>
+                            <div style={{ backgroundImage: `url(${feature3.src})` }} className={`bg-cover bg-center w-full max-w-[450px] tablet:max-w-full h-[600px] p-4 tablet:p-[32px] flex flex-col justify-start gap-y-16 tablet:gap-y-0 tablet:justify-between items-start`}>
                                 <div className={`flex flex-col gap-y-3`}>
                                     <div className={`text-[16px] tablet:text-[18px] laptop:text-[20px] font-grotesk font-medium text-white leading-[100%] tracking-[-1%]`}>Built for agents, not just chat</div>
                                     <div className={`font-grotesk leading-[150%] tracking-[-2%] text-[#B2B2B2] text-[14px] tablet:text-[16px]`}>Autonomous execution of multi-step processes</div>
@@ -206,13 +206,15 @@ const Features = () => {
 
                                     {/* IMAGE */}
                                     <div
-                                        className="relative w-full aspect-[4/3] tablet:aspect-[5/4] laptop:aspect-[6/5] ">
+                                        className="relative flex justify-start w-full aspect-[4/3] tablet:aspect-[5/4] laptop:aspect-[6/5] ">
                                         <Image
                                             src={feature4}
                                             alt=""
                                             fill
-                                            className="object-cover"
-                                            sizes="(max-width: 50.625rem) 100vw, (max-width: 75rem) 50vw, 33vw "/>
+                                            className="object-contain tablet:object-cover object-left"
+                                            sizes="(max-width: 50.625rem) 100vw, (max-width: 75rem) 50vw, 33vw"
+                                        />
+
                                     </div>
                                 </div>
 
@@ -233,8 +235,9 @@ const Features = () => {
                                             src={feature5}
                                             alt=""
                                             fill
-                                            className="object-cover"
-                                            sizes="(max-width: 50.625rem) 100vw, (max-width: 75rem) 50vw, 33vw "/>
+                                            className="object-contain tablet:object-cover"
+                                            sizes="(max-width: 50.625rem) 100vw, (max-width: 75rem) 50vw, 33vw"
+                                        />
                                     </div>
                                 </div>
 
@@ -254,8 +257,9 @@ const Features = () => {
                                             src={feature6}
                                             alt=""
                                             fill
-                                            className="object-cover"
-                                            sizes="(max-width: 50.625rem) 100vw, (max-width: 75rem) 50vw, 33vw "/>
+                                            className="object-contain tablet:object-cover"
+                                            sizes="(max-width: 50.625rem) 100vw, (max-width: 75rem) 50vw, 33vw"
+                                        />
                                     </div>
                                 </div>
                             </div>
@@ -265,7 +269,7 @@ const Features = () => {
                 </div>
 
             </div>
-            <div className={`w-full h-[20px] tablet:h-[40px] laptop:h-[100px] desktop:h-[120px] bg-white`}></div>
+            <div className={`w-full h-[60px] tablet:h-[80px] laptop:h-[100px] desktop:h-[120px] bg-white`}></div>
         </div>
     )
 }

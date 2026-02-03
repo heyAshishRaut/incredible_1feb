@@ -2,8 +2,7 @@ import Image from "next/image"
 import Navbar from "@/app/components/navbar"
 import Hamburger from "@/app/components/hamburger"
 import heroInput from "@/public/heroInput.webp"
-import TryAIAssistantButton from "@/app/components/tryAIAssistantBtn";
-import HeroSectionAnimation from "@/app/components/heroSectionAnimation";
+import TryAIAssistantButton from "@/app/components/tryAIAssistantBtn"
 
 const HeroSection = () => {
     return (
@@ -52,14 +51,15 @@ const HeroSection = () => {
                             </div>
                         </div>
 
-                        <div className="
-  relative
-  w-full
-  max-w-[667px]
-  aspect-[562/148]
-  overflow-hidden
-">
-                            <HeroSectionAnimation />
+                        <div className="relative w-full desktop:max-w-[667px] laptop:max-w-[562px] aspect-[562/148]">
+                            <Image
+                                src={heroInput}
+                                alt="Hero input"
+                                fill
+                                className="object-contain"
+                                sizes="(max-width: 50.625rem) 100vw, (max-width: 75rem) 80vw, 562px"
+                                priority
+                            />
                         </div>
 
                     </div>
