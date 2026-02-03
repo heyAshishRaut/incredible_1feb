@@ -38,7 +38,7 @@ export default function Testimonial() {
     const active = testimonials[index]
 
     return (
-        <div className="pb-4 w-full max-w-[366px] font-grotesk">
+        <div className="w-full max-w-[366px] font-grotesk">
 
             {/* INDICATORS */}
             <div className="flex gap-x-2 mb-6">
@@ -67,7 +67,7 @@ export default function Testimonial() {
                     transition={{ duration: 0.4, ease: "easeOut" }}
                     className={`h-[145px] flex flex-col gap-y-[17px]`}
                 >
-                    <p className="text-[#B2B2B2] text-[14px] tablet:text-[16px] leading-[150%] tracking-[-2%]">
+                    <p className="text-[#B2B2B2] text-[14px] font-grotesk tablet:text-[16px] leading-[150%] tracking-[-2%]">
                         {active.text}
                     </p>
 

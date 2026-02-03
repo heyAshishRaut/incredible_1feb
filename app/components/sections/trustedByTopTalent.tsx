@@ -96,8 +96,8 @@ const TrustedByTopTalent = () => {
     return (
         <div className={`w-full h-[178px] p-[10px]`}>
             <div className={`w-full h-full py-[26px]`}>
-                <div className={`h-full flex flex-col items-center justify-between`}>
-                    <div className={`font-grotesk font-medium text-[11px] tablet:text-[12px] laptop:text-[14px] desktop:text-[20px] text-[#0D0D0D]`}>We optimize for the single statistic that matters: Amount of real-world tasks.</div>
+                <div className={`h-full flex flex-col gap-y-[32px] items-center justify-between`}>
+                    <div className={`font-grotesk font-medium text-[11px] tablet:text-[12px] laptop:text-[20px] text-[#0D0D0D]`}>Trusted by top talents at Incredible companies</div>
                     <div className={`w-full laptop:max-w-[1216px] h-12 overflow-hidden`}>
 
                         <div className={`marquee-right`}>

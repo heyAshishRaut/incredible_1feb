@@ -25,7 +25,7 @@ const items = [
                     src={one}
                     alt="Text Generations"
                     fill
-                    className="object-contain p-4 tablet:p-6"
+                    className="object-contain p-1"
                     sizes="(max-width: 50.625rem) 100vw, 400px"
                 />
             </div>

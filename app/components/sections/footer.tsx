@@ -44,8 +44,7 @@ const items = [
                 name: "Privacy Policy"
             }
         ]
-    },
-
+    }
 ]
 
 const Footer = () => {

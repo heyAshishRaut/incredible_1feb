@@ -9,6 +9,7 @@ import Security from "@/app/components/sections/security"
 import ExploreAI from "@/app/components/sections/exploreAI"
 import Faq from "@/app/components/sections/faq"
 import Footer from "@/app/components/sections/footer"
+import Footer1 from "@/app/components/sections/footer1"
 
 export default function Home() {
     return (
@@ -17,13 +18,14 @@ export default function Home() {
             <TrustedByTopTalent/>
             <UseCases/>
             <Integrations/>
-            <Build/>
             <Integrations2/>
+            <Build/>
             <Features/>
             <Security/>
             <ExploreAI/>
             <Faq/>
-            <Footer/>
+            {/*<Footer/>*/}
+            <Footer1/>
         </div>
     )
 }

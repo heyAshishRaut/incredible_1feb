@@ -69,7 +69,7 @@ const Security = () => {
                     </div>
                 </div>
 
-                <div className={`w-full max-w-[450px] tablet:max-w-full flex flex-col items-center tablet:flex-row border border-[#F0F0F0]`}>
+                <div className={`w-full max-w-[450px] tablet:max-w-full laptop:max-w-[1178px] desktop:max-w-[1398px] flex flex-col items-center tablet:flex-row border border-[#F0F0F0]`}>
                     {
                         items.map((e, i) => (
                             <div className={`${i !== items.length - 1 ? "border-b tablet:border-r border-[#F0F0F0]" : "border-transparent"} w-full max-w-[450px] h-[234px] p-[10px] flex flex-col gap-y-[35px] items-center justify-center`}>

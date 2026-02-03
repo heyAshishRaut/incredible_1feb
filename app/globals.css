@@ -35,6 +35,39 @@
     }
 }
 
+@layer components {
+    .footer-wrapper {
+        aspect-ratio: 1440 / 787;
+        min-height: 500px;
+    }
+
+    .footer-bg {
+        background-image: url('/footernewbg.png');
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: cover;
+        transform: scale(1);
+    }
+
+    @media (max-width: 640px) {
+        .footer-wrapper {
+            aspect-ratio: auto;
+            min-height: 480px;
+        }
+
+        .footer-bg {
+            background-position: center center;
+            transform: scale(1.2);
+            opacity: 0.85;
+        }
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
 .marquee-right {
     width: 100%;
     overflow: hidden;

@@ -2,10 +2,11 @@ import Image from "next/image"
 import integration1 from "@/public/integration1.webp"
 import integration2 from "@/public/integration2.webp"
 import integrationSVG from "@/public/sectionIcons/integrationsSVG.webp"
+import TryAIAssistantButton from "@/app/components/tryAIAssistantBtn";
 
 const Integrations = () => {
     return (
-        <div className={`w-full flex flex-col gap-y-20 p-5 tablet:p-10 laptop:p-25 desktop:p-[120px]`}>
+        <div className={`w-full flex flex-col gap-y-20 p-5 tablet:pt-10 laptop:pt-25 desktop:pt-[120px] tablet:px-[30px] laptop:px-[50px] desktop:px-[70px]`}>
             <div className={`w-full h-full flex flex-col items-center gap-y-20 desktop:gap-y-[95px]`}>
 
                 <div className={`w-full flex flex-col items-center gap-y-[24px] desktop:gap-y-[28px] max-w-[350px] tablet:max-w-[480px] laptop:max-w-[600px]`}>
@@ -116,13 +117,7 @@ const Integrations = () => {
                         </div>
                     </div>
 
-                    <div className=" overflow-hidden relative group w-[170px] cursor-pointer h-11 flex items-center justify-center px-[20px] py-[12px] font-sans font-medium text-[12px] tablet:text-[15px] laptop::text-[17px] leading-[19.6%] rounded-full text-white border border-[#57565F] bg-[linear-gradient(90deg,#1F1F21_0%,#3E3D4C_34%,#1F1F21_51%,#3E3D4C_72%,#1F1F21_100%)] shadow-[0_25px_45px_rgba(0,0,0,0.25)] overflow-visible">
-                        <div className=" pointer-events-none absolute inset-[-28px] rounded-full bg-white/8 blur-[40px] opacity-0 transition-opacity duration-300 group-hover:opacity-100"/>
-
-                        <div className="relative z-10">
-                            Try AI Assistant
-                        </div>
-                    </div>
+                    <TryAIAssistantButton/>
                 </div>
             </div>
         </div>

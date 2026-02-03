@@ -1,9 +1,9 @@
 import feature1 from "@/public/feature/feature1.png"
-import feature2 from "@/public/feature/feature2.png"
+import feature2 from "@/public/feature/feature1_2.png"
 import feature3 from "@/public/feature/feature3.png"
 import feature4 from "@/public/feature/feature4.png"
 import feature5 from "@/public/feature/feature5.png"
-import feature6 from "@/public/feature/feature6.png"
+import feature6 from "@/public/feature/featurethird.png"
 import Image from "next/image"
 import Testimonial from "@/app/components/testimonials"
 
@@ -12,7 +12,7 @@ const Features = () => {
         <div className={`w-full flex flex-col`}>
             <div className={`w-full h-[20px] tablet:h-[40px] laptop:h-[100px] desktop:h-[120px] bg-white`}></div>
             <div className={`w-full bg-[#F5F5F5] border border-[#F0F0F0] flex flex-col items-center mx-auto px-[30px] tablet:px-[40px] laptop:px-[100px] desktop:px-[120px]`}>
-                <div className={`pt-10 w-full tablet:max-w-[900px] laptop:max-w-[1240px] bg-white`}>
+                <div className={`pt-10 w-full tablet:max-w-[900px] laptop:max-w-[1240px] desktop:max-w-[1472px] bg-white`}>
                     <div className={`w-full flex flex-col items-center gap-y-[50px]`}>
                         <div className={`w-full p-2.5 tablet:p-0 max-w-[400px] tablet:max-w-[560px] flex flex-col items-center gap-y-[24px]`}>
                             <svg width="111" height="38" viewBox="0 0 111 38" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -136,47 +136,56 @@ const Features = () => {
                             </div>
                         </div>
 
-                        <div className={`w-full`}>
+                        <div className={`w-full flex flex-col items-center`}>
                             <div className={`w-full flex flex-col items-center justify-center gap-y-[1px] tablet:flex-row border border-[#F0F0F0]`}>
-                                <div className={`w-full max-w-[450px] tablet:max-w-1/2 flex flex-col bg-[#FBFAF9]`}>
-                                    <div className={`tablet:h-[150px] p-4 w-full flex flex-col justify-start gap-y-2 tablet:gap-y-[14px] px-[15px] tablet:px-[22px] laptop:px-[33px]`}>
-                                        <div className={`font-grotesk text-[15px] tablet:text-[18px] laptop:text-[20px] font-medium leading-[100%] tracking-[-1%]`}>Unmatched function calling accuracy</div>
-                                        <div className={`w-full laptop:w-[85%] max-w-[450px] tablet:max-w-[554px] text-[#666] font-grotesk text-[14px] tablet:text-[16px] leading-[150%] tracking-[-2%]`}>Models that think before they act. Sophisticated problem-solving and logical decision-making for complex challenges</div>
+                                <div className="w-full max-w-[450px] tablet:max-w-1/2 flex flex-col bg-[#FBFAF9]">
+                                    <div className="tablet:h-[150px] p-4 w-full flex flex-col justify-start gap-y-2 tablet:gap-y-[14px] px-[15px] tablet:px-[22px] laptop:px-[33px]">
+                                        <div className="font-grotesk text-[15px] tablet:text-[17px] laptop:text-[20px] font-medium leading-[100%] tracking-[-1%]">
+                                            Unmatched function calling accuracy
+                                        </div>
+                                        <div className="w-full laptop:w-[85%] max-w-[450px] tablet:max-w-[554px] text-[#666] font-grotesk text-[14px] tablet:text-[15px] leading-[150%] tracking-[-2%]">
+                                            Models that think before they act. Sophisticated problem-solving and logical decision-making for complex challenges
+                                        </div>
                                     </div>
 
-                                    <div className="relative w-full h-[373px]">
+                                    <div className="relative w-full aspect-[4/3] tablet:aspect-[5/3] laptop:aspect-[3/2] overflow-hidden">
                                         <Image
                                             src={feature1}
-                                            alt=""
+                                            alt="Illustration of advanced function calling and reasoning in AI models"
                                             fill
                                             className="object-cover"
                                             priority
+                                            sizes="(max-width: 809px) 450px, (max-width: 1199px) 50vw, 40vw"
                                         />
                                     </div>
-
                                 </div>
 
                                 <div className="hidden tablet:block w-[1px] bg-[#F0F0F0]" />
 
-                                <div className={`h-full w-full max-w-[450px] tablet:max-w-1/2 flex flex-col bg-[#FBFAF9] `}>
-                                    <div className={`tablet:h-[150px] p-4 w-full flex flex-col justify-start gap-y-2 tablet:gap-y-[14px] px-[15px] tablet:px-[22px] laptop:px-[33px]`}>
-                                        <div className={`font-grotesk text-[15px] tablet:text-[18px] laptop:text-[20px] font-medium leading-[100%] tracking-[-1%]`}>SDKs for every stack</div>
-                                        <div className={`laptop:w-[85%] w-full max-w-[450px] tablet:max-w-[554px] text-[#666] font-grotesk text-[14px] tablet:text-[16px] leading-[150%] tracking-[-2%]`}>Converting raw data into actionable insights and clean, usable formats</div>
+                                <div className="h-full w-full max-w-[450px] tablet:max-w-1/2 flex flex-col bg-[#FBFAF9]">
+                                    <div className="tablet:h-[150px] p-4 w-full flex flex-col justify-start gap-y-2 tablet:gap-y-[14px] px-[15px] tablet:px-[22px] laptop:px-[33px]">
+                                        <div className="font-grotesk text-[15px] tablet:text-[17px] laptop:text-[20px] font-medium leading-[100%] tracking-[-1%]">
+                                            SDKs for every stack
+                                        </div>
+                                        <div className="laptop:w-[85%] w-full max-w-[450px] tablet:max-w-[554px] text-[#666] font-grotesk text-[14px] tablet:text-[15px] leading-[150%] tracking-[-2%]">
+                                            Converting raw data into actionable insights and clean, usable formats
+                                        </div>
                                     </div>
 
-                                    <div className="relative w-full h-[373px]">
+                                    <div className="relative w-full aspect-[4/3] tablet:aspect-[5/3] laptop:aspect-[3/2] overflow-hidden rounded-t-xl">
                                         <Image
                                             src={feature2}
-                                            alt=""
+                                            alt="Feature illustration of SDK integrations"
                                             fill
                                             className="object-cover"
                                             priority
+                                            sizes="(max-width: 809px) 450px, (max-width: 1199px) 50vw, 40vw"
                                         />
                                     </div>
                                 </div>
                             </div>
 
-                            <div style={{ backgroundImage: `url(${feature3.src})` }} className={`bg-cover bg-center w-full h-[495px] p-4 tablet:p-[32px] flex flex-col justify-between items-start`}>
+                            <div style={{ backgroundImage: `url(${feature3.src})` }} className={`bg-cover bg-center w-full max-w-[450px] tablet:max-w-full h-[495px] p-4 tablet:p-[32px] flex flex-col justify-start gap-y-10 tablet:gap-y-0 tablet:justify-between items-start`}>
                                 <div className={`flex flex-col gap-y-3`}>
                                     <div className={`text-[16px] tablet:text-[18px] laptop:text-[20px] font-grotesk font-medium text-white leading-[100%] tracking-[-1%]`}>Built for agents, not just chat</div>
                                     <div className={`font-grotesk leading-[150%] tracking-[-2%] text-[#B2B2B2] text-[14px] tablet:text-[16px]`}>Autonomous execution of multi-step processes</div>
@@ -184,41 +193,78 @@ const Features = () => {
                                 <Testimonial/>
                             </div>
 
-                            <div className={`w-full flex flex-col items-center justify-center tablet:flex-row laptop:flex-nowrap gap-y-[1px] bg-[#F0F0F0]`}>
-                                <div className={`w-full max-w-[450px] tablet:w-1/2 laptop:w-1/3 h-full flex flex-col bg-[#FCFAF8]`}>
-                                    <div className={`w-full h-[146px] px-[28px] py-[28px] flex flex-col gap-y-[14px]`}>
-                                        <div className={`font-grotesk text-[16px] laptop:text-[20px] font-medium leading-[140%] tracking-[-1%]`}>Lightweight, fast, and simple</div>
-                                        <div className={`font-grotesk text-[#666] text-[15px] tablet:text-[14px] laptop:text-[17px]  leading-[150%] tracking-[-2%]`}>Converting raw data into actionable insights and clean, usable formats</div>
+                            <div
+                                className=" w-full flex flex-col items-center tablet:items-start  justify-center tablet:flex-row laptop:flex-nowrap gap-y-[1px] bg-[#FCFAF8]">
+                                <div className="w-full max-w-[450px] tablet:w-1/2 laptop:w-1/3 flex flex-col bg-[#FCFAF8]">
+                                    {/* TEXT */}
+                                    <div className="w-full px-[28px] py-[28px] flex flex-col gap-y-[14px]">
+                                        <div className="font-grotesk text-[15px] tablet:text-[17px] laptop:text-[20px] font-medium leading-[100%] tracking-[-1%]">
+                                            Lightweight, fast, and simple
+                                        </div>
+                                        <div className="font-grotesk text-[#666] text-[14px] tablet:text-[15px] laptop:text-[16px] leading-[150%] tracking-[-2%]">
+                                            Converting raw data into actionable insights and clean, usable formats
+                                        </div>
                                     </div>
-                                    <div className={`relative w-full h-[330px] tablet:h-[350px] laptop:[373px]`}>
-                                        <Image src={feature4} alt={``} fill />
+
+                                    {/* IMAGE */}
+                                    <div
+                                        className=" relative w-full aspect-[4/3] tablet:aspect-[5/4] laptop:aspect-[6/5] ">
+                                        <Image
+                                            src={feature4}
+                                            alt=""
+                                            fill
+                                            className="object-cover"
+                                            sizes="(max-width: 50.625rem) 100vw, (max-width: 75rem) 50vw, 33vw "/>
                                     </div>
                                 </div>
 
-                                <div className={`hidden laptop:block w-[1px] h-full bg-[#F0F0F0]`}></div>
-
-                                <div className={`w-full max-w-[450px] tablet:w-1/2 border-l border-[#F0F0F0] laptop:border-none laptop:w-1/3 h-full flex flex-col bg-[#FCFAF8]`}>
-                                    <div className={`w-full h-[146px] px-[28px] py-[28px] flex flex-col gap-y-[14px]`}>
-                                        <div className={`font-grotesk text-[16px] laptop:text-[20px] font-medium leading-[140%] tracking-[-1%]`}>SDK for every stack</div>
-                                        <div className={`font-grotesk text-[#666] text-[15px] tablet:text-[14px] laptop:text-[17px]  leading-[150%] tracking-[-2%]`}>Converting raw data into actionable insights and clean, usable formats</div>
+                                <div className="w-full max-w-[450px] tablet:w-1/2 laptop:w-1/3 flex flex-col bg-[#FCFAF8]">
+                                    {/* TEXT */}
+                                    <div className="w-full px-[28px] py-[28px] flex flex-col gap-y-[14px]">
+                                        <div className="font-grotesk text-[15px] tablet:text-[17px] laptop:text-[20px] font-medium leading-[100%] tracking-[-1%]">
+                                            SDKs for every stack
+                                        </div>
+                                        <div className="font-grotesk text-[#666] text-[15px] tablet:text-[14px] laptop:text-[16px] leading-[150%] tracking-[-2%]">
+                                            Converting raw data into actionable insights and clean, usable formats
+                                        </div>
                                     </div>
-                                    <div className={`relative w-full h-[330px] tablet:h-[350px] laptop:[373px]`}>
-                                        <Image src={feature5} alt={``} fill />
+
+                                    {/* IMAGE */}
+                                    <div
+                                        className=" relative w-full aspect-[4/3] tablet:aspect-[5/4] laptop:aspect-[6/5] ">
+                                        <Image
+                                            src={feature5}
+                                            alt=""
+                                            fill
+                                            className="object-cover"
+                                            sizes="(max-width: 50.625rem) 100vw, (max-width: 75rem) 50vw, 33vw "/>
                                     </div>
                                 </div>
 
-                                <div className={`hidden max-w-[450px] laptop:block w-[1px] h-full bg-[#F0F0F0]`}></div>
-
-                                <div className={`w-full max-w-[450px] tablet:w-1/2 laptop:w-1/3 h-full flex flex-col bg-[#FCFAF8]`}>
-                                    <div className={`w-full h-[146px] px-[28px] py-[28px] flex flex-col gap-y-[14px]`}>
-                                        <div className={`font-grotesk text-[16px] laptop:text-[20px] font-medium leading-[140%] tracking-[-1%]`}>Enterprise-grade reliability + support</div>
-                                        <div className={`font-grotesk text-[#666] text-[15px] tablet:text-[14px] laptop:text-[17px] leading-[150%] tracking-[-2%]`}>Converting raw data into actionable insights and clean, usable formats</div>
+                                <div className="w-full max-w-[450px] tablet:w-1/2 laptop:w-1/3 flex flex-col bg-[#FCFAF8]">
+                                    {/* TEXT */}
+                                    <div className="w-full px-[28px] py-[28px] flex flex-col gap-y-[14px]">
+                                        <div className="font-grotesk text-[15px] tablet:text-[17px] laptop:text-[20px] font-medium leading-[100%] tracking-[-1%]">
+                                            Enterprise-grade reliability
+                                        </div>
+                                        <div className="font-grotesk text-[#666] text-[15px] tablet:text-[14px] laptop:text-[16px] leading-[150%] tracking-[-2%]">
+                                            Converting raw data into actionable insights and clean, usable formats
+                                        </div>
                                     </div>
-                                    <div className={`relative w-full h-[330px] tablet:h-[350px] laptop:[373px]`}>
-                                        <Image src={feature6} alt={``} fill />
+
+                                    {/* IMAGE */}
+                                    <div
+                                        className=" relative w-full aspect-[4/3] tablet:aspect-[5/4] laptop:aspect-[6/5] ">
+                                        <Image
+                                            src={feature6}
+                                            alt=""
+                                            fill
+                                            className="object-cover"
+                                            sizes="(max-width: 50.625rem) 100vw, (max-width: 75rem) 50vw, 33vw "/>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
 
                     </div>

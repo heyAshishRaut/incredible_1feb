@@ -37,10 +37,10 @@ const UseCases = () => {
     const [activeIndex, setActiveIndex] = useState<number | null>(0)
 
     return (
-        <div className={`w-full flex flex-col p-5 tablet:p-10 laptop:p-25 desktop:p-[120px]`}>
+        <div className={`w-full flex flex-col p-5 tablet:pt-10 laptop:pt-25 desktop:pt-[120px] tablet:px-[30px] laptop:px-[50px] desktop:px-[70px]`}>
             <div className={`w-full h-full flex flex-col items-center gap-y-20 desktop:gap-y-[95px]`}>
 
-                <div className={`w-[90%] flex flex-col items-center gap-y-[24px] desktop:gap-y-[28px] max-w-[400px] tablet:max-w-[520px] laptop:max-w-[633px] desktop:max-w-[700px]`}>
+                <div className={`w-[90%] flex flex-col items-center gap-y-[24px] desktop:gap-y-[28px] max-w-[400px] tablet:max-w-[520px] laptop:max-w-[670px] desktop:max-w-[700px]`}>
                     <Image
                         src={useCaseSVG}
                         alt="Small UI image"
@@ -157,9 +157,9 @@ const UseCases = () => {
 
                     <div
                         className="
-                    relative w-full shrink-0
-                    max-w-full
-                    tablet:max-w-[560px]
+                    relative shrink-0
+                    w-full max-w-[450px]
+                    tablet:max-w-[640px]
                     laptop:max-w-[640px]
                     aspect-[640/564]
                     "
@@ -179,7 +179,6 @@ const UseCases = () => {
                             draggable={false}
                         />
                     </div>
-
                 </div>
             </div>
         </div>

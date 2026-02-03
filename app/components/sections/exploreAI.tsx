@@ -7,7 +7,7 @@ const ExploreAI = () => {
                 style={{ backgroundImage: `url(${exploreAI.src})` }}
                 className="
                 relative w-full
-                max-w-full
+                max-w-[450px]
                 tablet:max-w-[900px]
                 laptop:max-w-[1070px]
                 desktop:max-w-[1270px]

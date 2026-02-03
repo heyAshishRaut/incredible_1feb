@@ -121,7 +121,7 @@ const contents = [
 
 const Build = () => {
     return (
-        <div className={`w-full flex flex-col items-center gap-y-20 p-5 tablet:p-10 laptop:p-25 desktop:p-[120px]`}>
+        <div className={`w-full flex flex-col items-center gap-y-20 p-5 tablet:pt-10 laptop:pt-25 desktop:pt-[120px] tablet:px-[30px] laptop:px-[50px] desktop:px-[70px]`}>
             <div className={`w-full h-full flex flex-col items-center gap-y-20`}>
                 <div className={`w-full h-[210px] flex flex-col items-center gap-y-6`}>
                     <Image
@@ -138,7 +138,7 @@ const Build = () => {
                         <div className={`font-grotesk text-[#666666] text-center text-[14px] tablet:text-[16px] leading-[150%] tracking-[-2%] desktop:text-[19px]`}>A production-ready API with reliable function calling, deep reasoning, high throughput, and affordable token pricing.</div>
                     </div>
                 </div>
-                <div className={`w-full tablet:w-[800px] laptop:w-[974px] desktop:w-full flex items-center justify-center flex-wrap gap-[22px] desktop:gap-[26px]`}>
+                <div className={`w-full tablet:w-[800px] laptop:w-[974px] desktop:w-[1156px] flex items-center justify-center flex-wrap gap-[22px] desktop:gap-[26px]`}>
                     {
                         contents.map((e, index) => (
                             <div key={index} className="w-[310px] desktop:w-[368px] desktop:h-[307px]  px-[24px] py-[20px] flex items-center flex-col gap-y-[24px] rounded-[16px] bg-[#FDFDFD] shadow-[0_0_0_1px_rgba(25,28,33,0.06),0_5px_10px_-2px_rgba(106,115,133,0.12),0_2px_6px_-2px_rgba(0,0,0,0.12)]">
