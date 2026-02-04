@@ -27,7 +27,7 @@ export default function Home() {
             <Faq/>
             {/*<Footer/>*/}
             <Footer1/>
-            <TEMP/>
+            {/*<TEMP/>*/}
         </div>
     )
 }
