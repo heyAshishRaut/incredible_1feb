@@ -10,6 +10,7 @@ import ExploreAI from "@/app/components/sections/exploreAI"
 import Faq from "@/app/components/sections/faq"
 import Footer from "@/app/components/sections/footer"
 import Footer1 from "@/app/components/sections/footer1"
+import TEMP from "@/app/components/sections/TEMP";
 
 export default function Home() {
     return (
@@ -26,6 +27,7 @@ export default function Home() {
             <Faq/>
             {/*<Footer/>*/}
             <Footer1/>
+            <TEMP/>
         </div>
     )
 }

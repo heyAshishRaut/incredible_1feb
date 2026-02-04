@@ -115,8 +115,7 @@ const Hamburger = () => {
                 }
             </AnimatePresence>
             {/* glow */}
-            <div
-                className="
+            <div className="
                 pointer-events-none absolute inset-[-28px]
                 rounded-full bg-white/8 blur-[40px]
                 opacity-0 transition-opacity duration-300

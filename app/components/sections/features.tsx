@@ -191,9 +191,8 @@ const Features = () => {
                                 <Testimonial/>
                             </div>
 
-                            <div className="min-h-full bg-[#fcfaf7] border border-[#F0F0F0] w-full flex flex-col items-center tablet:items-stretch  justify-center tablet:flex-row laptop:flex-nowrap">
-
-                                <div className="border-b tablet:border-b-0 tablet:border-r border-[#F0F0F0] w-full max-w-[450px] tablet:w-1/2 laptop:w-1/3 flex flex-col">
+                            <div className="min-h-full bg-[#fcfaf7] border border-[#F0F0F0] w-full flex flex-col items-start tablet:items-stretch  justify-stretch tablet:flex-row laptop:flex-nowrap">
+                                <div className=" border-b tablet:border-b-0 tablet:border-r border-[#F0F0F0] w-full max-w-[450px] tablet:w-1/2 laptop:w-1/3 desktop:max-w-1/3 flex flex-col">
                                     {/* TEXT */}
                                     <div className="w-full px-[28px] py-[28px] flex flex-col gap-y-[14px]">
                                         <div className="font-grotesk text-[15px] tablet:text-[17px] laptop:text-[20px] font-medium leading-[100%] tracking-[-1%]">
@@ -218,8 +217,7 @@ const Features = () => {
                                     </div>
                                 </div>
 
-
-                                <div className="border-b tablet:border-b-0 tablet:border-r border-[#F0F0F0]  w-full max-w-[450px] tablet:w-1/2 laptop:w-1/3 flex flex-col bg-[#FCFAF8]">
+                                <div className=" border-b tablet:border-b-0 tablet:border-r border-[#F0F0F0]  w-full max-w-[450px] tablet:max-w-1/2 laptop:max-w-1/3  flex flex-col bg-[#FCFAF8]">
                                     <div className="w-full px-[28px] py-[28px] flex flex-col gap-y-[14px]">
                                         <div className="font-grotesk text-[15px] tablet:text-[17px] laptop:text-[20px] font-medium leading-[100%] tracking-[-1%]">
                                             SDKs for every stack
@@ -241,7 +239,7 @@ const Features = () => {
                                     </div>
                                 </div>
 
-                                <div className="w-full max-w-[450px] tablet:w-1/2 laptop:w-1/3 flex flex-col bg-[#FCFAF8]">
+                                <div className=" w-full max-w-[450px] tablet:max-w-1/2 laptop:max-w-1/3 flex flex-col bg-[#FCFAF8]">
                                     <div className="w-full px-[28px] py-[28px] flex flex-col gap-y-[14px]">
                                         <div className="font-grotesk text-[15px] tablet:text-[17px] laptop:text-[20px] font-medium leading-[100%] tracking-[-1%]">
                                             Enterprise-grade reliability
